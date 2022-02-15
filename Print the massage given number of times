@@ -1,0 +1,38 @@
+using System;
+
+using System.IO;
+
+using System.Linq;
+
+using System.Collections.Generic;
+
+
+namespace CSharp_Shell
+{
+
+    public class Program 
+    {
+        public static void Main()
+        {
+			Console.WriteLine("Enter Number");
+			int n=Convert.ToInt32(Console.ReadLine());
+			if(n>0)
+			{
+				for(int i=1;i<=n;i++)
+				{
+					Console.WriteLine("Teach One,Each One,Tree One");
+				}
+			}
+        }
+    }
+}
+Output:-
+
+Enter Number
+6
+Teach One,Each One,Tree One
+Teach One,Each One,Tree One
+Teach One,Each One,Tree One
+Teach One,Each One,Tree One
+Teach One,Each One,Tree One
+Teach One,Each One,Tree One

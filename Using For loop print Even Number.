@@ -1,0 +1,32 @@
+using System;
+using System.IO;
+using System.Linq;
+using System.Collections.Generic;
+
+namespace CSharp_Shell
+{
+
+    public class Program 
+    {
+        public static void Main()
+        {
+			
+					for(int i=1;i<=10;i++)
+				{
+				    if(i%2==0)
+				    {
+					Console.WriteLine(i);
+					}
+				
+			}
+        }
+    }
+}
+
+Output:-
+
+2
+4
+6
+8
+10

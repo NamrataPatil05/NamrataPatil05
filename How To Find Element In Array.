@@ -1,0 +1,70 @@
+using System;
+using System.IO;
+using System.Linq;
+using System.Collections.Generic;
+
+namespace CSharp_Shell
+{
+
+    public class Program 
+    {
+        public static void Main()
+        {
+        
+        int [] arr=new int[50];
+        int n,n1,i,flag=0;
+        Console.WriteLine("Enter The Size Of Array :");
+        n=Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Enter The Array Elements : ");
+        for(i=0;i<n;i++)
+        {
+        	arr[i]=Convert.ToInt32(Console.ReadLine());
+        }
+        	
+        Console.WriteLine("Enter The Element To Serach :");
+        n1=Convert.ToInt32(Console.ReadLine());
+        for(i=0;i<n;i++)
+        {
+        	if(arr[i]==n1)
+        	{
+        		flag=1;
+        		Console.WriteLine("True");
+        		break;
+        	}
+        }
+        	
+        if(flag==0)	
+        {
+        	Console.WriteLine("False");
+        }
+			
+        }
+    }
+}
+
+Output:-
+
+Output 1
+ 
+Enter The Size Of Array :
+3
+Enter The Array Elements : 
+65
+87
+65
+Enter The Element To Serach :
+80
+False
+
+Output 2
+
+Enter The Size Of Array :
+3
+Enter The Array Elements : 
+53
+65
+43
+Enter The Element To Serach :
+65
+True
+

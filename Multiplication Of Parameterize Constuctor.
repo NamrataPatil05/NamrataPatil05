@@ -1,0 +1,41 @@
+using System;
+using System.IO;
+using System.Linq;
+using System.Collections.Generic;
+
+namespace CSharp_Shell
+{
+
+    public class Program 
+    {
+    	int num1;
+    	int num2;
+    	Program(int a,int b)
+    	{
+    		num1=a;
+    		num2=b;
+    		Console.WriteLine("Multiplication Of A*B = "+(a*b));
+    		
+    	}
+    	
+        public static void Main()
+        {
+        	int a,b;
+        	Console.WriteLine("Enter 1st Number = ");
+        	a=Convert.ToInt32(Console.ReadLine());
+        	Console.WriteLine("Enter 2nd Number = ");
+
+        	b=Convert.ToInt32(Console.ReadLine());
+			Program n=new Program(a,b);
+        }
+    }
+}
+
+Output:-
+Enter 1st Number = 
+40
+Enter 2nd Number = 
+20
+Multiplication Of A*B = 800
+
+

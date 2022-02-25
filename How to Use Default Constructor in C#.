@@ -1,0 +1,27 @@
+using System;
+using System.IO;
+using System.Linq;
+using System.Collections.Generic;
+
+namespace CSharp_Shell
+{
+
+    public class Program 
+    {
+    	Program()
+    	{
+    
+    		Console.WriteLine("SYBCA 80,PATIL NAMRATA VIJAY.");
+    		
+    	}
+    	
+        public static void Main()
+        {
+			Program n=new Program();
+        }
+    }
+}
+
+Output:-
+
+SYBCA 80,PATIL NAMRATA VIJAY.

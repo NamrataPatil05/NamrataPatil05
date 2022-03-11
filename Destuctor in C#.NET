@@ -1,0 +1,44 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Destructor
+{
+    class Program
+    {
+        
+            public int age;
+            public string name;
+            Program(int age1,string name1)
+            {
+                age = age1;
+                name = name1;
+            }
+        int age2()
+        {
+            return age;
+        }
+        string name2()
+        {
+            return name;
+        }
+        ~Program()
+        {
+            Console.WriteLine("Destructor Is Called");
+        }
+        public static void Main(String [] args)
+        {
+            Program p=new Program(80,"NAMRATA");
+            Console.WriteLine(p.age);
+            Console.WriteLine(p.name);
+           // Console.ReadLine();
+        }
+        }
+    }
+
+Output:-
+
+80
+NAMRATA
+Destructor Is Called
+Press any key to continue . . .
